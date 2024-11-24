@@ -1,0 +1,195 @@
+html {
+    font-family: Inter;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.user-select-none {
+
+    user-select: none;         
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none; 
+}
+
+.main-title {
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.main-title-container {
+
+    height: 10%;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #4d77cb;
+}
+
+.main-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    height: 90%;
+}
+
+.calc-picker-container {
+    flex: 1;
+
+    background-color: rgb(228, 228, 228);
+    color: rgb(50, 50, 50);
+    border: 2px solid rgb(200, 200, 200);
+
+    font-weight: bold;
+
+    padding: 10px 0px;
+}
+
+.calc-container {
+
+    flex: 3;
+
+    background-color: #4d77cb;
+    color: white;
+    border: 2px solid #2f497a;
+
+    font-weight: bold;
+
+    padding: 10px 0px;
+
+}
+
+.container-title {
+
+    display: block;
+    text-align: center;
+
+    font-size: 30px;
+
+    padding-bottom: 50px;
+
+}
+
+.option-list {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.calc-picker-button {
+
+    border: 1.5px solid rgb(50, 50, 50);
+    border-radius: 2px;
+
+    font-size: 20px;
+
+    padding: 0px 10px;
+
+    cursor: pointer;
+}
+
+.calc-picker-button:active {
+
+    color: rgb(150, 150, 150);
+    border-color: rgb(150, 150, 150);
+
+}
+
+#back-button {
+
+    margin-bottom: 20px;
+
+}
+
+.calc-content {
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    border: 1px solid white;
+
+}
+
+.compute-button {
+
+    width: 100px;
+    height: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    background-color: orange;
+
+    cursor: pointer;
+}
+
+.compute-button:active {
+
+    background-color: rgb(173, 113, 1);
+
+}
+
+.vec-entry-input,
+.scal-entry-input {
+
+    display: inline;
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+
+}
+
+.vec-entry-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+select {
+
+    width: 200px;
+    font-size: 20px;
+
+}
+
+.calc-config {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}

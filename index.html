@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Linear Algebra Calculator</title>
+</head>
+
+<body>
+
+    <div class="main-title-container user-select-none">
+        <h1 class="main-title">Linear Algebra</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="calc-picker-container">
+
+            <span class="container-title user-select-none">Calculators</span>
+
+            <div class="option-list">
+                <span class="calc-picker-button user-select-none">Vectors &#62;</span>
+                <span class="calc-picker-button user-select-none">Matrices &#62;</span>
+                <span class="calc-picker-button user-select-none">Linear Transformations &#62;</span>
+            </div>
+
+        </div>
+        <div class="calc-container">
+
+            <span class="container-title user-select-none" id="calc-title">Select a calculator to start...</span>
+
+            <div class="calc-content">
+
+                <div class="calc-config">
+                    <label for="vector-calc-select">Calculator:
+                        <select id="vector-calc-select">
+                            <option value="Add">Add</option>
+                            <option value="Subtract">Subtract</option>
+                            <option value="Scalar Product">Scalar Product</option>
+                            <option value="Dot Product">Dot Product</option>
+                            <option value="Cross Product">Cross Product</option>
+                            <option value="Magnitude">Magnitude</option>
+                            <option value="Normalize">Normalize</option>
+                            <option value="Angle">Angle</option>
+                        </select>
+                    </label>
+
+                    <label for="vector-dim-select">Vector Dimension:
+                        <select id="vector-dim-select">
+                            <option value="2">2D</option>
+                            <option selected value="3">3D</option>
+                            <option value="4">4D</option>
+                            <option value="5">5D</option>
+                        </select>
+                    </label>
+                </div>
+
+                <input class="scal-entry-input" id="scal" style="display: none;" placeholder="0" type="number">
+
+                <div class="vec-entry-container" id="v1">
+                    <input class="vec-entry-input" id="v11" placeholder="0" type="number">
+                    <input class="vec-entry-input" id="v12" placeholder="0" type="number">
+                    <input class="vec-entry-input" id="v13" placeholder="0" type="number">
+                </div>
+
+                <div class="vec-entry-container" id="v2">
+                    <input class="vec-entry-input" id="v21" placeholder="0" type="number">
+                    <input class="vec-entry-input" id="v22" placeholder="0" type="number">
+                    <input class="vec-entry-input" id="v23" placeholder="0" type="number">
+                </div>
+
+                <button class="compute-button">Compute</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
